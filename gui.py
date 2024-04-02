@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 
 col1, col2, col3 = st.columns([1, 3, 1])
-model = load_model('spam_classifier_LSTM_30e_model.h5')
+model = load_model('spam_classifier_model.h5')
 with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
