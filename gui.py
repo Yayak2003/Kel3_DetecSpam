@@ -5,8 +5,8 @@ import pickle
 import numpy as np
 
 col1, col2, col3 = st.columns([1, 3, 1])
-model = load_model('model/spam_classifier_LSTM_30e_model.h5')
-with open('model/tokenizer.pickle', 'rb') as handle:
+model = load_model('spam_classifier_LSTM_30e_model.h5')
+with open('tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 
