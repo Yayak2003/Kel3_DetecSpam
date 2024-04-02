@@ -8,7 +8,8 @@ col1, col2, col3 = st.columns([1, 3, 1])
 model = load_model('model/spam_classifier_LSTM_30e_model.h5')
 with open('model/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
-    
+
+
 def classify_message(message):
     max_len = 150  # Same as during training
     sequence = tokenizer.texts_to_sequences([message])
@@ -46,11 +47,12 @@ with col2:
         else:
             st.success("Pesan ini adalah ham (bukan spam)")
             st.write(f"Accuracy: {np.max(prediction_score) * 100:.2f}%")
+    
 
 with col1:
-    st.header("+++++++")
-    st.image("https://static.streamlit.io/examples/cat.jpg")
+    # st.header("Fasilkom")
+    st.image("assets/1.png")
 
 with col3:
-    st.header("+++++++")
-    st.image("https://static.streamlit.io/examples/owl.jpg")
+    # st.header("+++++++")
+    st.image("assets/2.png")
