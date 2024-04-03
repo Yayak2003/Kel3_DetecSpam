@@ -1,1 +1,12 @@
-tensorflow = 
+pip 23.3
+tensorflow 2.15.0
+nltk 3.8.1
+pandas 1.5.3
+numpy 1.24.2
+keras 2.15.0
+gensim 4.3.2
+nltk 3.8.1
+seaborn 0.12.2
+streamlit 1.30.0
+tokenizers 0.15.2
+matplotlib 3.7.1
