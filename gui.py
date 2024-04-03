@@ -46,7 +46,7 @@ with col2:
                 st.write(f"Accuracy: {np.max(prediction_score) * 100:.2f}%")
         else:
             st.success("Pesan ini adalah ham (bukan spam)")
-            st.write(f"Accuracy: {np.max(prediction_score) * 100:.2f}%")
+            st.write(f"Accuracy:  {(1 - prediction_score) * 100:.2f}%")
     
 
 with col1:
